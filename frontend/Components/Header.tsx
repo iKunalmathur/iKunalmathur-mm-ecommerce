@@ -62,20 +62,32 @@ export default function Header() {
                     >
                       {auth.name}
                     </a>
-
                     <ul
-                      className="dropdown-menu"
-                      aria-labelledby="dropdownMenuLink"
+                      className="dropdown-menu dropdown-menu-dark dropdown-menu-macos mx-0 border-0 shadow"
+                      style={{ width: "220px;" }}
                     >
                       <li>
-                        <a className="dropdown-item" href="#">
-                          Account 👤
+                        <a className="dropdown-item active" href="#">
+                          Action
                         </a>
                       </li>
                       <li>
-                        <a className="dropdown-item" href="#">
-                          Logout 🔥
-                        </a>
+                        <Link href="/profile">
+                          <a className="dropdown-item">Profile 👤</a>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="/orders">
+                          <a className="dropdown-item">Your Orders 🚚</a>
+                        </Link>
+                      </li>
+                      <li>
+                        <hr className="dropdown-divider" />
+                      </li>
+                      <li>
+                        <Link href="/logout">
+                          <a className="dropdown-item">Logout 🔥</a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
