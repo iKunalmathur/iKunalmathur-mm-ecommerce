@@ -6,7 +6,7 @@ export default function orders() {
   return (
     <Layout>
       <br />
-      <div className="container">
+      <div className="container vh-100">
         <div className="list-group">
           <a
             href="#"

@@ -49,7 +49,7 @@ export default function Header() {
               </li> */}
             </ul>
             <div className="d-flex gap-2">
-              {Object.keys(auth).length ? (
+              {auth && Object.keys(auth).length ? (
                 <>
                   <div className="dropdown">
                     <a
