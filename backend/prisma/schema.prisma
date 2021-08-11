@@ -44,8 +44,8 @@ model Order {
   @@map("order")
   id Int @id @default(autoincrement())
   name String @db.VarChar(50)
-  email String @unique
-  phone String @unique @db.VarChar(16)
+  email String 
+  phone String @db.VarChar(16)
   address String @db.VarChar(255)
   price Float @db.Double
   deliverd Boolean @default(false)

@@ -17,6 +17,7 @@ app.get("/", (req, res) => {
 app.use("/api/auth", auth);
 app.use("/api/users", require("./routes/user"));
 app.use("/api/products", require("./routes/product"));
+app.use("/api/orders", require("./routes/order"));
 
 // Port Setup
 const port = 5500;
