@@ -34,7 +34,7 @@ export default function Hero() {
             src="/cover-1.jpg"
             className="d-block w-100"
             alt=""
-            style={{ maxHeight: "500px", objectFit: "cover" }}
+            style={{ maxHeight: "550px", objectFit: "cover" }}
           />
           <div className="carousel-caption d-none d-md-block">
             <h5>Store Open</h5>
@@ -46,7 +46,7 @@ export default function Hero() {
             src="/cover-2.jpg"
             className="d-block w-100"
             alt=""
-            style={{ maxHeight: "500px", objectFit: "cover" }}
+            style={{ maxHeight: "550px", objectFit: "cover" }}
           />
           <div className="carousel-caption d-none d-md-block">
             <h5>Sale</h5>
@@ -58,7 +58,7 @@ export default function Hero() {
             src="/cover-3.jpg"
             className="d-block w-100"
             alt=""
-            style={{ maxHeight: "500px", objectFit: "cover" }}
+            style={{ maxHeight: "550px", objectFit: "cover" }}
           />
           <div className="carousel-caption d-none d-md-block">
             <h5>Full Fill Your Wish</h5>

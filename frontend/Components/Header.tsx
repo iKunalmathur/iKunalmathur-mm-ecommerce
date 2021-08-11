@@ -1,10 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import Link from "next/link";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { CartContext } from "../pages/_app";
 
 export default function Header() {
   const [auth, setauth] = useState<any>({ id: 1, name: "John Doe" });
+
+  const cartItemCount = useContext(CartContext).length;
 
   return (
     <>
@@ -13,7 +16,7 @@ export default function Header() {
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
       </Head>
       <nav
-        className="navbar navbar-expand-lg navbar-dark"
+        className="navbar navbar-expand-lg navbar-dark fixed-top"
         style={{ backgroundColor: "#15202b" }}
       >
         <div className="container" style={{ paddingBlock: "1em" }}>
@@ -64,7 +67,7 @@ export default function Header() {
                     </a>
                     <ul
                       className="dropdown-menu dropdown-menu-dark dropdown-menu-macos mx-0 border-0 shadow"
-                      style={{ width: "220px;" }}
+                      style={{ width: "220px" }}
                     >
                       <li>
                         <a className="dropdown-item active" href="#">
@@ -92,7 +95,7 @@ export default function Header() {
                     </ul>
                   </div>
                   <Link href="/cart">
-                    <a className="btn btn-primary">🛒</a>
+                    <a className="btn btn-primary">🛒 {cartItemCount}</a>
                   </Link>
                 </>
               ) : (
